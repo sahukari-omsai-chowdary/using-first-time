@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1553" started-at="2021-01-15T09:43:51Z" finished-at="2021-01-15T09:43:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1553" started-at="2021-01-15T09:43:51Z" finished-at="2021-01-15T09:43:52Z">
+      <class name="neotech.ProductClientTest">
+        <test-method status="PASS" signature="customSetupMethod()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="customSetupMethod" is-config="true" duration-ms="12" started-at="2021-01-15T15:13:51Z" finished-at="2021-01-15T15:13:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customSetupMethod -->
+        <test-method status="PASS" signature="testAddProduct()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="testAddProduct" duration-ms="1061" started-at="2021-01-15T15:13:51Z" description="verify that add user method returns when successfull" finished-at="2021-01-15T15:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProduct -->
+        <test-method status="FAIL" signature="testDeleteProduct()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="testDeleteProduct" duration-ms="66" started-at="2021-01-15T15:13:52Z" description="verify that add user method returns when successfull" finished-at="2021-01-15T15:13:52Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[304 -> DELETE operation failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: 304 -> DELETE operation failed
+	at com.webapplication.service.neotech.client.ProductClient.deleteProduct(ProductClient.java:73)
+	at neotech.ProductClientTest.testDeleteProduct(ProductClientTest.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteProduct -->
+        <test-method status="PASS" signature="customSetupMethod()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="customSetupMethod" is-config="true" duration-ms="0" started-at="2021-01-15T15:13:52Z" finished-at="2021-01-15T15:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customSetupMethod -->
+        <test-method status="PASS" signature="customSetupMethod()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="customSetupMethod" is-config="true" duration-ms="0" started-at="2021-01-15T15:13:52Z" finished-at="2021-01-15T15:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customSetupMethod -->
+        <test-method status="PASS" signature="testGetAllProducts()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="testGetAllProducts" duration-ms="91" started-at="2021-01-15T15:13:52Z" description="verify that add user method returns when successfull" finished-at="2021-01-15T15:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllProducts -->
+        <test-method status="PASS" signature="testGetBadRequest()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="testGetBadRequest" duration-ms="75" started-at="2021-01-15T15:13:52Z" description="verify that add user method returns when successfull" finished-at="2021-01-15T15:13:52Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[400 -> GET process failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: 400 -> GET process failed
+	at com.webapplication.service.neotech.client.ProductClient.getProduct(ProductClient.java:32)
+	at neotech.ProductClientTest.testGetBadRequest(ProductClientTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBadRequest -->
+        <test-method status="PASS" signature="customSetupMethod()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="customSetupMethod" is-config="true" duration-ms="0" started-at="2021-01-15T15:13:52Z" finished-at="2021-01-15T15:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customSetupMethod -->
+        <test-method status="PASS" signature="customSetupMethod()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="customSetupMethod" is-config="true" duration-ms="1" started-at="2021-01-15T15:13:52Z" finished-at="2021-01-15T15:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customSetupMethod -->
+        <test-method status="PASS" signature="testGetProduct()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="testGetProduct" duration-ms="71" started-at="2021-01-15T15:13:52Z" description="verify that product is delivered for given ID" finished-at="2021-01-15T15:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetProduct -->
+        <test-method status="PASS" signature="testGetRequestNotFound()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="testGetRequestNotFound" duration-ms="60" started-at="2021-01-15T15:13:52Z" description="verify that add user method returns when successfull" finished-at="2021-01-15T15:13:52Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[404 -> GET process failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: 404 -> GET process failed
+	at com.webapplication.service.neotech.client.ProductClient.getProduct(ProductClient.java:32)
+	at neotech.ProductClientTest.testGetRequestNotFound(ProductClientTest.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetRequestNotFound -->
+        <test-method status="PASS" signature="customSetupMethod()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="customSetupMethod" is-config="true" duration-ms="0" started-at="2021-01-15T15:13:52Z" finished-at="2021-01-15T15:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customSetupMethod -->
+        <test-method status="PASS" signature="customSetupMethod()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="customSetupMethod" is-config="true" duration-ms="0" started-at="2021-01-15T15:13:52Z" finished-at="2021-01-15T15:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customSetupMethod -->
+        <test-method status="PASS" signature="testUpdateProduct()[pri:0, instance:neotech.ProductClientTest@7f1302d6]" name="testUpdateProduct" duration-ms="63" started-at="2021-01-15T15:13:52Z" description="verify that add user method returns when successfull" finished-at="2021-01-15T15:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateProduct -->
+      </class> <!-- neotech.ProductClientTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
