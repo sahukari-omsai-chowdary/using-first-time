@@ -16,7 +16,9 @@ import com.webapplication.service.neotech.model.Product;
 public class ProductClient {
 	
 	private static String targetURI = "http://localhost:8080/neotech/rest/productservices";
-	
+	/*
+	 * 
+	 */
 	static WebTarget getWebTarget() {
 		ClientConfig clientConfig = new ClientConfig();
 		Client client = ClientBuilder.newClient(clientConfig);
